@@ -1,0 +1,28 @@
+<div class="navegacion-fondo">
+  <div class="navegacion-contenedor">
+    <a (click)="vaciarInput()" [routerLink]="['/inicio']" routerLinkActive="router-link-active" class="titulo">
+      <h1>Alimentos<samp class="samp">DZ</samp></h1>
+    </a>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a (click)="vaciarInput()" routerLink="/inicio" class="nav-link active" aria-current="page" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="mostrarCategorias(); $event.preventDefault()" class="nav-link nav-linkCategorias"
+          href="#">Categorias</a>
+        <ng-container *ngIf="mostrar">
+          @if (mostrarCategoriasList$ | async; as resultsObject) {
+          <div class="lista" [ngClass]="{'mostrar': mostrar}">
+            @for (item of resultsObject.meals; track $index) {
+            <a (click)="goToItem(item.strCategory)" class="lista-item">{{item.strCategory}}</a>
+            }
+          </div>
+          }
+        </ng-container>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/ingredientes" class="nav-link" href="#">Ingredientes</a>
+      </li>
+    </ul>
+  </div>
+</div>

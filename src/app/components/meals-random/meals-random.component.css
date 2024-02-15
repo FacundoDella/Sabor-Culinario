@@ -1,0 +1,18 @@
+
+.mealContainer {
+    margin: 3rem 3rem 4rem 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mealPhoto{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.mealYt{
+    width: 10rem;
+    height: 5rem;
+}
+

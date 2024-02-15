@@ -1,0 +1,24 @@
+.contenedorItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.image {
+    width: 100%;
+    height: 30rem;
+}
+
+@media (min-width: 768px) {
+    .contenedorItem {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+    .image {
+        width: 100%;
+        height: 30rem;
+    }
+}

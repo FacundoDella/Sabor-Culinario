@@ -1,0 +1,8 @@
+<app-header></app-header>
+@if (mealItemTotal$ |async; as mealInfoResults) {
+<div class="mealContainer">
+    @for (item of mealInfoResults.meals; track $index) {
+    <app-meal-info [mealInfo]="item"></app-meal-info>
+    }
+</div>
+}

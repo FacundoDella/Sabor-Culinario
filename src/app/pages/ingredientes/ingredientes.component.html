@@ -1,0 +1,17 @@
+<head>
+    <meta charset="utf-8">
+</head>
+<app-header></app-header>
+@if (ingredientesList$ | async; as ingredientesList) {
+    <ng-container >
+        @for (item of ingredientesList.meals; track $index) {
+            <app-ingrediente [ingrediente]="item"></app-ingrediente>
+        }
+    </ng-container>
+}
+
+@if (error) {
+<app-error-message [errorMessage]="error"></app-error-message>
+}
+
+

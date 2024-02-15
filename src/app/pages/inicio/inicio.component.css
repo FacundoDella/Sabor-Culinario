@@ -1,0 +1,37 @@
+.mealInfoCard {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    border: 2px double salmon;
+    height: auto;
+}
+
+
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+        max-width: 40rem;
+        max-height: 30rem;
+    }
+
+    .mealInfoCard {
+        max-width: 120rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px double salmon;
+        max-width: 120rem;
+        width: 90%;
+        height: 40rem;
+    }
+
+}
+
+
+.h1 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}

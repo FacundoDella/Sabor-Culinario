@@ -1,0 +1,15 @@
+.mealInfoCard {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+@media (min-width: 768px) {
+    .mealInfoCard {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+

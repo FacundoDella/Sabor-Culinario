@@ -1,0 +1,15 @@
+<head> <!-- Preconeccion al sv de comida -->
+    <link rel="preconnect" href="https://www.themealdb.com">
+</head>
+
+<app-header></app-header>
+@if(mealItemResults$ |async; as resultsObject){
+<ul class="mealInfoCard">
+    @for(item of resultsObject.meals; track item.strMeal){
+    <app-meals [meal]="item"></app-meals>
+    }
+</ul>
+}
+@if (errorMessage) {
+<app-error-message [errorMessage]="errorMessage"></app-error-message>
+}

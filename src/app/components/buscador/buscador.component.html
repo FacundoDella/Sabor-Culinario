@@ -1,0 +1,12 @@
+<div class="contenedor">
+    <div class="welcome">
+        <h1>Bienvenidos a AlimentosDZ</h1>
+        <p>Fáciles y ricas preparaciones para todos los días</p>
+        <div>
+            <form class="buscador">
+                <input name="buscador" (keyup.enter)="buscarLetra()" class="input" type="text" name="" id="" placeholder="Busca recetas por letra o ingrediente" [(ngModel)]="info.inputSearch" name="buscador">
+                <button class="boton" (click)="buscarLetra()">Buscar</button>
+            </form>
+        </div>
+    </div>
+</div>

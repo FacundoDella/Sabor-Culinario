@@ -1,0 +1,129 @@
+.navegacion-fondo {
+    background-color: rgb(233, 0, 0);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+}
+
+.navegacion-contenedor {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .navegacion-fondo {
+        padding: 2rem;
+        position: relative;
+        z-index: 1;
+        -webkit-box-shadow: 0px 6px 6px -3px rgba(245, 245, 245, 0.75);
+        -moz-box-shadow: 0px 6px 6px -3px rgba(245, 245, 245, 0.75);
+        box-shadow: 0px 6px 6px -3px rgba(245, 245, 245, 0.75);
+    }
+
+    .navegacion-contenedor {
+        margin: 0 auto;
+        max-width: 60rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+
+
+
+.titulo {
+    text-decoration: none;
+}
+
+a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.samp {
+    color: yellow;
+    font-size: 4rem;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    
+.nav{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+
+/* .lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .2rem;
+    position: absolute;
+} */
+
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .2rem;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+
+    background-color: rgb(233, 0, 0);
+    border-radius: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+
+    margin-left: -10rem;
+    margin-top: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.lista-item {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.lista-item:hover {
+    color: yellow;
+}
+
+
+.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.nav-linkCategorias {
+    position: relative;
+}

@@ -1,0 +1,67 @@
+.info{
+    text-align: center;
+}
+
+.mealContainer {
+    margin: 4rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 120rem;
+}
+
+@media (min-width: 768px) {
+    .mealContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+.mealPhoto {
+    width: 100%;
+    height: 40rem;
+    background-position: center center;
+}
+
+
+.mealYt {
+    width: 8rem;
+    height: 5rem;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .ingredients {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+.item-info {
+    display: flex;
+}
+
+.item {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.instrucciones{
+    grid-column: 1/3;
+}
+
+.info-titulo{
+    margin-bottom: 1rem;
+}
+
+.info-titulo2{
+    margin-bottom: 1rem;
+}

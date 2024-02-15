@@ -1,0 +1,6 @@
+<div class="mealContainer">
+    <ng-container *ngIf="meal.strMealThumb">
+        <a (click)="goToMeal()"><img class="mealPhoto" [ngSrc]="meal.strMealThumb" width="200" height="200" priority></a>
+    </ng-container>
+    <h3>{{meal.strMeal}}</h3>
+</div>

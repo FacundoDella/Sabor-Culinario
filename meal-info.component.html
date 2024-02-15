@@ -1,0 +1,97 @@
+<div class="mealContainer">
+    <ng-container class="mealPhoto" *ngIf="mealInfo.strMealThumb">
+        <img [ngSrc]="mealInfo.strMealThumb" width="200" height="150">
+    </ng-container>
+    <div class="info">
+        <h3>{{mealInfo.strMeal}}</h3>
+        <h4>Ingredients:</h4>
+        <div class="ingredients">
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient1">
+                <p>{{mealInfo.strIngredient1}}:</p>
+                <p>{{mealInfo.strMeasure1}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient2">
+                <p>{{mealInfo.strIngredient2}}:</p>
+                <p>{{mealInfo.strMeasure2}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient3">
+                <p>{{mealInfo.strIngredient3}}:</p>
+                <p>{{mealInfo.strMeasure3}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient4">
+                <p>{{mealInfo.strIngredient4}}:</p>
+                <p>{{mealInfo.strMeasure4}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient5">
+                <p>{{mealInfo.strIngredient5}}:</p>
+                <p>{{mealInfo.strMeasure5}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient6">
+                <p>{{mealInfo.strIngredient6}}:</p>
+                <p>{{mealInfo.strMeasure6}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient7">
+                <p>{{mealInfo.strIngredient7}}:</p>
+                <p>{{mealInfo.strMeasure7}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient8">
+                <p>{{mealInfo.strIngredient8}}:</p>
+                <p>{{mealInfo.strMeasure8}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient9">
+                <p>{{mealInfo.strIngredient9}}:</p>
+                <p>{{mealInfo.strMeasure9}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient10">
+                <p>{{mealInfo.strIngredient10}}:</p>
+                <p>{{mealInfo.strMeasure10}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient11">
+                <p>{{mealInfo.strIngredient11}}:</p>
+                <p>{{mealInfo.strMeasure11}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient12">
+                <p>{{mealInfo.strIngredient12}}:</p>
+                <p>{{mealInfo.strMeasure12}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient13">
+                <p>{{mealInfo.strIngredient13}}:</p>
+                <p>{{mealInfo.strMeasure13}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient14">
+                <p>{{mealInfo.strIngredient14}}:</p>
+                <p>{{mealInfo.strMeasure14}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient15">
+                <p>{{mealInfo.strIngredient15}}:</p>
+                <p>{{mealInfo.strMeasure15}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient16">
+                <p>{{mealInfo.strIngredient16}}:</p>
+                <p>{{mealInfo.strMeasure16}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient17">
+                <p>{{mealInfo.strIngredient17}}:</p>
+                <p>{{mealInfo.strMeasure17}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient18">
+                <p>{{mealInfo.strIngredient18}}:</p>
+                <p>{{mealInfo.strMeasure18}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient19">
+                <p>{{mealInfo.strIngredient19}}:</p>
+                <p>{{mealInfo.strMeasure19}}</p>
+            </ng-container>
+            <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient20">
+                <p>{{mealInfo.strIngredient20}}:</p>
+                <p>{{mealInfo.strMeasure20}}</p>
+            </ng-container>
+        </div>
+        <ng-container *ngIf="mealInfo.strYoutube">
+            <a href="{{mealInfo.strYoutube}}"><img class="mealYt" src="../../../assets/images/yt.png" alt=""></a>
+        </ng-container>
+    </div>
+    <div class="instrucciones">
+        <p>{{mealInfo.strInstructions}}</p>
+    </div>
+</div>
