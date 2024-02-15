@@ -1,0 +1,1 @@
+import{k as r}from"./chunk-SMVWYKSP.js";var n=(()=>{let t=class t{constructor(){this.inputSearch="",console.log("SharedService creado")}};t.\u0275fac=function(e){return new(e||t)},t.\u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"});let o=t;return o})();export{n as a};
