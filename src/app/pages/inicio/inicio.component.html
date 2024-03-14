@@ -1,37 +1,44 @@
 <app-header></app-header>
 <app-buscador></app-buscador>
-<h1 class="h1">Recetas Destacadas</h1>
-<div class="mealInfoCard">
-    @if(mealItemResults$ |async; as resultsObject){
-    <ul>
-        @for(item of resultsObject.meals; track item.strMeal){
-        <div class="contenedor">
-            <app-meals-random [meal]="item"></app-meals-random>
-        </div>
-        }
-    </ul>
-    }
+<app-nosotros></app-nosotros>
+<div class="fondo">
+    <div class="info">
+        <h1 class="h1">Aquí tienes nuestras recetas destacadas de la semana:</h1>
+        <div class="mealInfoCard">
 
-    @if(mealItemResults2$ |async; as resultsObject){
-    <ul>
-        @for(item of resultsObject.meals; track item.strMeal){
-        <div class="contenedor">
-            <app-meals-random [meal]="item"></app-meals-random>
-        </div>
-        }
-    </ul>
-    }
+            @if(mealItemResults$ |async; as resultsObject){
+            <ul>
+                @for(item of resultsObject.meals; track item.strMeal){
+                <div class="contenedor">
+                    <app-meals-random [meal]="item"></app-meals-random>
+                </div>
+                }
+            </ul>
+            }
 
-    @if(mealItemResults3$ |async; as resultsObject){
-    <ul>
-        @for(item of resultsObject.meals; track item.strMeal){
-        <div class="contenedor">
-            <app-meals-random [meal]="item"></app-meals-random>
+            @if(mealItemResults2$ |async; as resultsObject){
+            <ul>
+                @for(item of resultsObject.meals; track item.strMeal){
+                <div class="contenedor">
+                    <app-meals-random [meal]="item"></app-meals-random>
+                </div>
+                }
+            </ul>
+            }
+
+            @if(mealItemResults3$ |async; as resultsObject){
+            <ul>
+                @for(item of resultsObject.meals; track item.strMeal){
+                <div class="contenedor">
+                    <app-meals-random [meal]="item"></app-meals-random>
+                </div>
+                }
+            </ul>
+            }
         </div>
-        }
-    </ul>
-    }
+    </div>
 </div>
+<app-footer></app-footer>
 @if (errorMessage) {
 <app-error-message [errorMessage]="errorMessage"></app-error-message>
 }

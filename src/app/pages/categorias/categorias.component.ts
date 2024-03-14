@@ -7,10 +7,11 @@ import { CategoriaList } from '../../interfaces/categoria';
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { HeaderComponent } from '../../components/header/header.component';
 import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 @Component({
   selector: 'app-categorias',
   standalone: true,
-  imports: [CategoriaComponent, AsyncPipe, HeaderComponent, NgIf, ErrorMessageComponent, NgFor],
+  imports: [CategoriaComponent, AsyncPipe, HeaderComponent, NgIf, ErrorMessageComponent, NgFor, FooterComponent],
   templateUrl: './categorias.component.html',
   styleUrl: './categorias.component.css'
 })

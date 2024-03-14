@@ -1,12 +1,47 @@
-.mealInfoCard {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    border: 2px double salmon;
+.fondo{
+    background-color: var(--fondo);
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    min-height: 75rem;
     height: auto;
 }
 
+.info{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+.mealInfoCard {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    height: auto;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+    .mealInfoCard {
+        width: 70%;
+    }
+    
+    
+.info{
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+}
 
 
 @media (min-width: 768px) {
@@ -21,7 +56,6 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        border: 2px double salmon;
         max-width: 120rem;
         width: 90%;
         height: 40rem;
@@ -32,6 +66,24 @@
 
 .h1 {
     text-align: center;
-    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
     margin-bottom: 2rem;
+    color: var(--naranja);
+}
+
+p{
+    color: var(--morado);
+}
+
+.span1{
+    color: var(--negro);
+}
+.span2{
+    color: var(--naranja);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
 }

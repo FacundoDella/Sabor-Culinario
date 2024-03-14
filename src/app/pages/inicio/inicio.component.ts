@@ -7,10 +7,13 @@ import { MealItem } from '../../interfaces/meal';
 import { AsyncPipe } from '@angular/common';
 import { MealsRandomComponent } from '../../components/meals-random/meals-random.component';
 import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
+import { NosotrosComponent } from '../../components/nosotros/nosotros.component';
+import { FooterComponent } from '../../components/footer/footer.component';
+
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [HeaderComponent, BuscadorComponent, AsyncPipe, MealsRandomComponent, ErrorMessageComponent],
+  imports: [HeaderComponent, BuscadorComponent, AsyncPipe, MealsRandomComponent, ErrorMessageComponent, NosotrosComponent, FooterComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })

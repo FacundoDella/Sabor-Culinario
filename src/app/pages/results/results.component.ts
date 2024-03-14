@@ -9,11 +9,12 @@ import { ErrorMessageComponent } from '../../components/error-message/error-mess
 import { info } from '../../interfaces/inputInfo';
 
 import { SharedService } from '../../core/services/shared-service';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-results',
   standalone: true,
-  imports: [AsyncPipe, HeaderComponent, MealsComponent, ErrorMessageComponent, NgIf, NgFor],
+  imports: [AsyncPipe, HeaderComponent, MealsComponent, ErrorMessageComponent, NgIf, NgFor, FooterComponent],
   templateUrl: './results.component.html',
   styleUrl: './results.component.css'
 })

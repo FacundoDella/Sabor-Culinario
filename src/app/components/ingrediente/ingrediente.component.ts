@@ -17,9 +17,15 @@ export class IngredienteComponent {
 
   info = info;
 
-  goToResults() {
+  saveInfo() {
     info.inputSearch = this.ingrediente.strIngredient;
-    this.router.navigate(['/results']);
-   
+    localStorage.setItem('inputSearch', this.ingrediente.strIngredient);
+    console.log(info.inputSearch);
+    this.goToResults();
   }
+
+  goToResults() {
+    this.router.navigate(['/results']);
+  }
+
 }

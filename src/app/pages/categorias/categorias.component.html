@@ -1,19 +1,20 @@
 <app-header></app-header>
-@if (categoriaList){
-<ng-container>
-    @for (item of categoriaList.categories; track $index) {
-    @if (item.strCategory == info.categoriaName) {
-    <div class="contenedor">
-        <app-categoria [categoriaItem]="item"></app-categoria>
-    </div>
+
+    @if (categoriaList){
+    <ng-container>
+        @for (item of categoriaList.categories; track $index) {
+        @if (item.strCategory == info.categoriaName) {
+        <div class="contenedor">
+            <app-categoria [categoriaItem]="item"></app-categoria>
+        </div>
+        }
+        }
+    </ng-container>
+
     }
-    }
-</ng-container>
 
-}
 
-<app-categoria></app-categoria>
-
+    <app-footer></app-footer>
 
 @if (errorMessage) {
 <app-error-message [errorMessage]="errorMessage"></app-error-message>

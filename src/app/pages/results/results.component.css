@@ -1,7 +1,14 @@
+.contenedor {
+    min-height: 60rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
 .mealInfoCard {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 120rem;
 }
@@ -12,4 +19,3 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
-

@@ -1,0 +1,79 @@
+.fondo {
+    background-color: var(--negro);
+    width: 100%;
+    max-height: 60rem;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+    color: var(--blanco);
+    text-align: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spanTitulo {
+    color: var(--naranja);
+}
+
+.bandera {
+    width: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contactoHorario {
+    border-top: 1px solid var(--gris);
+    color: var(--gris);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+span {
+    color: var(--gris);
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
+.redes {
+    padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+
+    .fondo {
+        background-color: var(--negro);
+        width: 100%;
+        max-height: 60rem;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .contenedor {
+        max-width: 120rem;
+        width: 100%;
+        margin: 0 auto;
+        color: var(--blanco);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactoHorario {
+        border-top: none;
+
+    }
+}

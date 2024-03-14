@@ -1,12 +1,21 @@
 <div class="mealContainer">
     <ng-container *ngIf="mealInfo.strMealThumb">
-        <img class="mealPhoto" [ngSrc]="mealInfo.strMealThumb" width="200" height="200">
+        <div class="contenedorYt">
+            <img class="mealPhoto" [ngSrc]="mealInfo.strMealThumb" width="200" height="200">
+            <ng-container *ngIf="mealInfo.strYoutube">
+                <div class="Yt">
+                    <p>Ver Receta</p>
+                    <a href="{{mealInfo.strYoutube}}"><img class="mealYt" src="../../../assets/images/yt.png"
+                            alt=""></a>
+                </div>
+            </ng-container>
+        </div>
     </ng-container>
     <div class="info">
         <h3 class="info-titulo">{{mealInfo.strMeal}}</h3>
         <h4 class="info-titulo2">Ingredientes: </h4>
         <div class="ingredients">
-            <div class="1">
+            <div class="uno">
                 <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient1">
                     <ul class="item-info">
                         <li class="item">{{mealInfo.strIngredient1}}: </li>
@@ -68,7 +77,7 @@
                     </ul>
                 </ng-container>
             </div>
-            <div class="2">
+            <div class="dos">
                 <ng-container class="mealIngredient" *ngIf="mealInfo.strIngredient11">
                     <ul class="item-info">
                         <li class="item">{{mealInfo.strIngredient11}} :</li>
@@ -131,10 +140,6 @@
                 </ng-container>
             </div>
         </div>
-        <ng-container *ngIf="mealInfo.strYoutube">
-            <p>Ver Receta</p>
-            <a href="{{mealInfo.strYoutube}}"><img class="mealYt" src="../../../assets/images/yt.png" alt=""></a>
-        </ng-container>
     </div>
     <div class="instrucciones">
         <h4 class="info-titulo2">Instrucciones:</h4>

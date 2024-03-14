@@ -1,12 +1,17 @@
 <div class="contenedor">
     <div class="welcome">
-        <h1>Bienvenidos a AlimentosDZ</h1>
-        <p>Fáciles y ricas preparaciones para todos los días</p>
-        <div>
-            <form class="buscador">
-                <input name="buscador" (keyup.enter)="buscarLetra()" class="input" type="text" name="" id="" placeholder="Busca recetas por letra o ingrediente" [(ngModel)]="info.inputSearch" name="buscador">
-                <button class="boton" (click)="buscarLetra()">Buscar</button>
-            </form>
+        <div class="info">
+            <h1>La mejor página de recetas gastronómicas <span> a tu disposición</span></h1>
+            <p>Alimentate mejor con fáciles y ricas preparaciones para todos los días</p>
+            <div>
+                <form class="buscador">
+                    <input name="buscador" (keyup.enter)="buscarLetra()" class="input" type="text" name="" id=""
+                        placeholder="Busca recetas por letra o ingrediente" [(ngModel)]="info.inputSearch"
+                        name="buscador">
+                    <button class="boton" (click)="buscarLetra()">Buscar</button>
+                </form>
+            </div>
         </div>
+        <img class="imagen" src="../../../assets/images/comida.jpg" alt="">
     </div>
 </div>
